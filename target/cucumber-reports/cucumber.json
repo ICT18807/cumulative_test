@@ -1,0 +1,223 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-19T09:22:47.760Z",
+        "line": 11,
+        "name": "Test User Login with valid credentials",
+        "description": "",
+        "id": "cumulative-test;test-user-login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7779491600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch actitime Login page",
+            "match": {
+              "location": "com.cumulative_test.cumulative_test.steps.LoginSteps.launch_actitime_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3114486300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Input \u0027admin\u0027 and \u0027manager\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027admin\u0027",
+                  "offset": 6
+                },
+                {
+                  "val": "\u0027manager\u0027",
+                  "offset": 18
+                }
+              ],
+              "location": "com.cumulative_test.cumulative_test.steps.LoginSteps.inputEmailAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3049652100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on login button",
+            "match": {
+              "location": "com.cumulative_test.cumulative_test.steps.LoginSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 591228000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is logged in",
+            "match": {
+              "location": "com.cumulative_test.cumulative_test.steps.LoginSteps.userIsLoggedIn()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@success_scenarios"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-19T09:23:02.330Z",
+        "line": 33,
+        "name": "Create new user",
+        "description": "",
+        "id": "cumulative-test;create-new-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5327966400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Navigate to user panel",
+            "match": {
+              "location": "com.cumulative_test.cumulative_test.steps.CreateUserSteps.navigateToUserPanel()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3081840200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Click on new user button",
+            "match": {
+              "location": "com.cumulative_test.cumulative_test.steps.CreateUserSteps.clickOnNewUserButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3195456900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Fill the mandatory fields \u0027Oliver\u0027 , \u0027Jake\u0027 ,\u0027ict18807@sjp.ac.lk\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Oliver\u0027",
+                  "offset": 26
+                },
+                {
+                  "val": "\u0027Jake\u0027",
+                  "offset": 37
+                },
+                {
+                  "val": "\u0027ict18807@sjp.ac.lk\u0027",
+                  "offset": 45
+                }
+              ],
+              "location": "com.cumulative_test.cumulative_test.steps.CreateUserSteps.fillTheMandatoryFieldsFirstnameLastnameEmail(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3069022300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Save and send invitation",
+            "match": {
+              "location": "com.cumulative_test.cumulative_test.steps.CreateUserSteps.saveAndSendInvitation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80315000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Validate that new user created successfully",
+            "match": {
+              "location": "com.cumulative_test.cumulative_test.steps.CreateUserSteps.validateThatNewUserCreatedSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@success_scenarios"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-19T09:23:17.094Z",
+        "line": 42,
+        "name": "Logout from account",
+        "description": "",
+        "id": "cumulative-test;logout-from-account;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3038429600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Click on logout button",
+            "match": {
+              "location": "com.cumulative_test.cumulative_test.steps.LogoutSteps.clickOnLogoutButton()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19045500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User is logged out and on \u0027Login\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Login\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "com.cumulative_test.cumulative_test.steps.LogoutSteps.userIsLoggedOutAndOnPagePage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@success_scenarios"
+          }
+        ]
+      }
+    ],
+    "name": "Cumulative test",
+    "description": "",
+    "id": "cumulative-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TestFeatures.feature",
+    "tags": []
+  }
+]
